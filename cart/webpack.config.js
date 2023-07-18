@@ -12,7 +12,7 @@ module.exports = {
       name: "cart",  //this name is used in the container webpack config
       filename: "remoteEntry.js", //default name
       exposes: {
-        "./CartShow": "./src/index", //aliases for the files we want to expose
+        "./CartShow": "./src/bootstrap", //aliases for the files we want to expose
       },
       shared: ["faker"], //this is used to share dependencies between the container and the module
     }),
